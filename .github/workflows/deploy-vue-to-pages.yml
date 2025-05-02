@@ -30,8 +30,8 @@ jobs:
           run_install: true
       - name: Build with pnpm
         run: pnpm build
-        env:
-          NODE_ENV: production
+      - name: Test with pnpm
+        run: pnpm test:unit
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
