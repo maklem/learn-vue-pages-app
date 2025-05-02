@@ -12,7 +12,7 @@ export class StaticAppRepository implements AppRepository{
                 argumentPattern: "+connect {hostname}:{port}",
             },
             {
-                name: "Left 4 Dead 2 (not tested)",
+                name: "Left 4 Dead 2",
                 steamAppId: "550",
                 argumentPattern: "+connect {hostname}:{port}",
             },

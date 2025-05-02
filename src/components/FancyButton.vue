@@ -21,7 +21,6 @@ defineEmits<{
         color: #000000;
         flex: 1;
         padding: 10px;
-        margin-top: 20px;
         font-size: 1rem;
         border-radius: 5px;
         border: 2px solid #CCFF00;
