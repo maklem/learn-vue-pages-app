@@ -43,9 +43,9 @@ function shareSteam() {
 
 function shareLink() {
   let appUrl = window.location.href.split('#')[0];
-  appUrl += '#game=' + selectedGame.value;
-  appUrl += '&host=' + hostname.value;
-  appUrl += '&port=' + port.value;
+  appUrl += '#game=' + encodeURIComponent(selectedGame.value);
+  appUrl += '&host=' + encodeURIComponent(hostname.value);
+  appUrl += '&port=' + encodeURIComponent(port.value);
 
   console.log('App URL: ' + appUrl);
   navigator.clipboard.writeText(appUrl);
